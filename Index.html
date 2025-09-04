@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFARMAFLIX - Protocolos Farmacêuticos de Elite | Transforme sua Carreira</title>
+    <meta name="description" content="Domine os protocolos farmacêuticos mais eficazes com CAFARMAFLIX. Mais de 50 protocolos profissionais para farmacêuticos que querem se destacar no mercado.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D0040C',
+                        secondary: '#FEFEFE',
+                        dark: '#000000',
+                        accent: '#FF1B1B',
+                        gold: '#FFD700'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .glass-effect-gray {
+            background: rgba(156, 163, 175, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #D0040C 0%, #FF1B1B 100%);
+            box-shadow: 0 8px 25px rgba(208, 4, 12, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(208, 4, 12, 0.6);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black font-sans overflow-x-hidden">
+
+    <!-- Hero Section - Primeira Dobra -->
+    <section class="min-h-screen flex flex-col justify-center px-4 py-8 relative bg-white">
+        <!-- Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-40 h-40 bg-primary rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-60 h-60 bg-accent rounded-full filter blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-52 h-52 bg-gold rounded-full filter blur-3xl opacity-20"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-6">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 text-xs font-medium mb-4">
+                <span class="text-red-800 font-semibold">🔥 MÉTODO COMPROVADO POR +300 PROFISSIONAIS</span>
+            </div>
+            
+            <!-- Title -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-4">
+                <span class="text-red-800">CAFARMA</span><span class="text-black">FLIX</span>
+                <br>
+                <span class="text-black">Protocolos de ELITE</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-6">
+                A plataforma definitiva que transforma farmacêuticos iniciantes em especialistas confiantes através de 
+                <span class="text-red-800 font-bold">protocolos profissionais validados</span> 
+                e metodologia exclusiva de aprendizado acelerado.
+            </p>
+            
+            <!-- Video -->
+            <div class="max-w-3xl mx-auto mb-6">
+                <div id="hero-video" class="relative aspect-video rounded-xl overflow-hidden bg-gray-100 border border-gray-300">
+                    <iframe 
+                        src="https://www.youtube.com/embed/__4VStchfsk" 
+                        title="CAFARMAFLIX - Método Exclusivo de Protocolos Farmacêuticos"
+                        class="w-full h-full border-0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="flex justify-center gap-8 text-xs mb-6">
+                <div class="text-center">
+                    <div class="text-lg sm:text-xl font-black text-red-800">+300</div>
+                    <div class="text-gray-600">Profissionais</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg sm:text-xl font-black text-red-800">50+</div>
+                    <div class="text-gray-600">Protocolos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg sm:text-xl font-black text-red-800">+10</div>
+                    <div class="text-gray-600">Anos de Experiência</div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="flex justify-center gap-4 max-w-2xl mx-auto">
+                <a href="#planos" class="btn-primary text-white font-bold py-3 px-6 rounded-full text-sm hover-lift transition-all flex-1 text-center">
+                    ACESSAR PROTOCOLOS
+                </a>
+                
+                <a href="#hero-video" class="glass-effect border border-gray-300 text-black font-semibold py-3 px-6 rounded-full text-sm hover:bg-gray-100 transition-all flex-1 text-center">
+                    🎬 VER DEMONSTRAÇÃO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 px-4 bg-gray-500">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-red-400 font-semibold">❌ VOCÊ SE IDENTIFICA COM ESSAS SITUAÇÕES?</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                    A Realidade Dolorosa de Muitos 
+                    <span class="text-red-800">Farmacêuticos</span>
+                </h2>
+                <p class="text-xl text-gray-200 max-w-4xl mx-auto">
+                    Estes são os principais obstáculos que impedem farmacêuticos de alcançar o sucesso profissional
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-effect-gray rounded-3xl p-8 border border-red-500/20 hover-lift transition-all">
+                    <div class="text-5xl mb-6">😰</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Medo Paralisante</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        Cliente pergunta sobre medicamento e você fica completamente inseguro, sem saber responder com confiança.
+                    </p>
+                </div>
+
+                <div class="glass-effect-gray rounded-3xl p-8 border border-red-500/20 hover-lift transition-all">
+                    <div class="text-5xl mb-6">😔</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Dependência Total</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        Precisa constantemente chamar o farmacêutico responsável para qualquer dúvida no balcão.
+                    </p>
+                </div>
+
+                <div class="glass-effect-gray rounded-3xl p-8 border border-red-500/20 hover-lift transition-all">
+                    <div class="text-5xl mb-6">😤</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Complexidade Técnica</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        Siglas médicas, concentrações e posologias que você não domina completamente na prática.
+                    </p>
+                </div>
+
+                <div class="glass-effect-gray rounded-3xl p-8 border border-red-500/20 hover-lift transition-all">
+                    <div class="text-5xl mb-6">💔</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Oportunidades Perdidas</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        Cliente sai sem comprar porque você não soube orientar adequadamente sobre o tratamento.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="glass-effect-gray rounded-3xl p-12 border border-red-500/30 max-w-5xl mx-auto">
+                    <h3 class="text-3xl font-bold text-red-400 mb-6">
+                        ⚠️ O RESULTADO DEVASTADOR
+                    </h3>
+                    <p class="text-xl text-gray-200 leading-relaxed">
+                        Frustração profissional crônica, perda de oportunidades de crescimento, baixa autoestima no trabalho 
+                        e a sensação constante de não estar preparado para exercer a farmácia com excelência.
+                        <span class="text-red-800 font-bold">Isso precisa mudar AGORA!</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-16 mb-8">
+                <a href="https://pay.hotmart.com/W97698031D?off=0r4h5xu7&bid=1753776009744" 
+                   target="_blank"
+                   class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg hover-lift transition-all inline-block animate-pulse">
+                    🚀 QUERO TESTAR POR R$ 1,00
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-green-500/20 border border-green-500/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-green-400 font-semibold">✅ A TRANSFORMAÇÃO DEFINITIVA</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    Método Exclusivo das 
+                    <span class="text-red-800">4 Rotinas de Elite</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                    Domine as 4 atividades fundamentais das drogarias através de protocolos profissionais validados
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="glass-effect rounded-3xl p-10 border border-primary/30 hover-lift transition-all">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center text-3xl">
+                            📦
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-black">Reposição & Armazenamento</h3>
+                            <p class="text-red-800 text-sm font-medium uppercase tracking-wider">ROTINA DE EXCELÊNCIA 1</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Domine as técnicas profissionais de reposição e armazenamento de medicamentos. 
+                        Amplie seus conhecimentos sobre concentrações e definições técnicas essenciais.
+                    </p>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-10 border border-accent/30 hover-lift transition-all">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-br from-accent to-primary rounded-3xl flex items-center justify-center text-3xl">
+                            💊
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-black">Dispensação Profissional</h3>
+                            <p class="text-accent text-sm font-medium uppercase tracking-wider">ROTINA DE EXCELÊNCIA 2</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Técnicas avançadas de dispensação medicamentosa com foco na excelência. 
+                        Evite falhas críticas e garanta a máxima qualidade no atendimento.
+                    </p>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-10 border border-gold/30 hover-lift transition-all">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-br from-gold to-primary rounded-3xl flex items-center justify-center text-3xl">
+                            🤝
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-black">Atendimento de Alto Padrão</h3>
+                            <p class="text-yellow-700 text-sm font-medium uppercase tracking-wider">ROTINA DE EXCELÊNCIA 3</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Conduza atendimentos farmacêuticos do início ao fim com maestria. 
+                        Proporcione experiências memoráveis que geram fidelização de clientes.
+                    </p>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-10 border border-green-500/30 hover-lift transition-all">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-primary rounded-3xl flex items-center justify-center text-3xl">
+                            🎯
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-black">Protocolos de Indicação</h3>
+                            <p class="text-green-400 text-sm font-medium uppercase tracking-wider">ROTINA DE EXCELÊNCIA 4</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Protocolos de indicação de MIPS para problemas autolimitados 
+                        e orientação especializada para medicamentos tarjados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocols Section -->
+    <section class="py-20 px-4 bg-gray-500">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-red-800 font-semibold">🔥 DOMÍNIO COMPLETO EM INDICAÇÕES</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                    Tenha Acesso a Mais de 
+                    <span class="text-red-800">100 Aulas com</span>
+                    <br>
+                    Protocolos Farmacêuticos
+                </h2>
+                <p class="text-xl text-gray-200 max-w-4xl mx-auto mb-8">
+                    <span class="text-red-800 font-bold">Posologias Precisas, Contraindicações Críticas, 
+                    Efeitos Colaterais, Interações Medicamentosas e Reações Adversas.</span>
+                    <br><br>
+                    <span class="text-white">Assista ao vídeo no topo da página e veja tudo na prática!</span>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+                <!-- FASE 1 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-primary/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-primary/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-primary rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 1</h3>
+                            <p class="text-xs text-red-800 font-medium uppercase">7 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Acne • Afta</p>
+                        <p>• Alergia • Anemia</p>
+                        <p>• Ansiedade • Apetite baixo</p>
+                        <p>• Azia</p>
+                    </div>
+                </div>
+
+                <!-- FASE 2 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-accent/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-accent/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-accent rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 2</h3>
+                            <p class="text-xs text-accent font-medium uppercase">9 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Bicho Geográfico • Brotoeja</p>
+                        <p>• Câimbra • Calmante Dentição</p>
+                        <p>• Candidíase • Caspa</p>
+                        <p>• Congestão Nasal • Conjuntivite</p>
+                        <p>• Cólicas</p>
+                    </div>
+                </div>
+
+                <!-- FASE 3 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-gold/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gold rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-black transform rotate-45 shadow-lg animate-pulse group-hover:shadow-gold/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-gold rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 3</h3>
+                            <p class="text-xs text-gold font-medium uppercase">7 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Diarréia • Dor de cabeça/Enxaqueca</p>
+                        <p>• Dor de dente • Dor de garganta</p>
+                        <p>• Dor de ouvido • Dor nas articulações</p>
+                        <p>• Dor no corpo</p>
+                    </div>
+                </div>
+
+                <!-- FASE 4 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-green-500/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-green-500/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-green-500 rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 4</h3>
+                            <p class="text-xs text-green-400 font-medium uppercase">8 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Estimulante sexual • Febre</p>
+                        <p>• Ferimentos • Gases</p>
+                        <p>• Gripe e Resfriados • Hemorróidas</p>
+                        <p>• Imunidade Baixa • Infecção Urinária</p>
+                    </div>
+                </div>
+
+                <!-- FASE 5 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-blue-500/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-blue-500/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-blue-500 rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 5</h3>
+                            <p class="text-xs text-blue-400 font-medium uppercase">6 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Laxante • Memória</p>
+                        <p>• Micose de pele • Micose de unha</p>
+                        <p>• Manchas Pós Gravidez</p>
+                        <p>• Menopausa</p>
+                    </div>
+                </div>
+
+                <!-- FASE 6 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-purple-500/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-purple-500 rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-purple-500/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-purple-500 rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 6</h3>
+                            <p class="text-xs text-purple-400 font-medium uppercase">8 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Náuseas/Enjoo/Vômito • Picada de Inseto</p>
+                        <p>• Piolho • Queimaduras</p>
+                        <p>• Queda de cabelos • Refluxo</p>
+                        <p>• Reidratação oral • Rinite</p>
+                    </div>
+                </div>
+
+                <!-- FASE 7 -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-orange-500/30 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-orange-500/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-orange-500 rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">FASE 7</h3>
+                            <p class="text-xs text-orange-400 font-medium uppercase">8 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-200 leading-relaxed space-y-1">
+                        <p>• Sarna/Escabiose • Sinusite</p>
+                        <p>• Torsicolo • Tosse produtiva</p>
+                        <p>• Tosse Seca • Unha encravada</p>
+                        <p>• Vermífugo • Verrugas e Calos</p>
+                    </div>
+                </div>
+
+                <!-- Card de Total -->
+                <div class="glass-effect-gray rounded-3xl p-6 border border-primary/50 bg-primary/10 hover-lift transition-all group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                            <div class="w-5 h-5 bg-white transform rotate-45 shadow-lg animate-pulse group-hover:shadow-primary/50 group-hover:scale-125 transition-all duration-300"></div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl opacity-30 blur-md group-hover:blur-lg group-hover:animate-pulse transition-all"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">TOTAL</h3>
+                            <p class="text-xs text-red-800 font-medium uppercase">53 Protocolos</p>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-red-800 font-bold">✅ Domínio Completo</p>
+                        <p class="text-red-800 font-bold">✅ Expertise Científica</p>
+                        <p class="text-red-800 font-bold">✅ Confiança Total</p>
+                        <p class="text-red-800 font-bold">✅ Resultados Garantidos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Button para continuar -->
+            <div class="text-center mt-16">
+                <a href="#metodologia" class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg hover-lift transition-all inline-block">
+                    📚 CONHEÇA NOSSA METODOLOGIA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reposição e Armazenamento Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-red-800 font-semibold">📦 ROTINA DE EXCELÊNCIA 1</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    Domínio Completo em
+                    <span class="text-red-800">Reposição & Armazenamento</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                    Técnicas profissionais de reposição e armazenamento que garantem a qualidade dos medicamentos 
+                    e potencializam o fator estético da exposição
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-3xl p-8 border border-primary/30">
+                        <h3 class="text-2xl font-bold text-black mb-6">🎯 O que você vai dominar:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Técnicas profissionais de reposição de medicamentos</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Armazenamento correto para preservar qualidade</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Conhecimento sobre concentrações e definições técnicas</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Principais siglas farmacêuticas essenciais</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Termos relacionados a estoque e controle</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Potencialização do fator estético da exposição</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-effect rounded-3xl p-8 border border-green-500/30 bg-green-500/10">
+                        <h4 class="text-xl font-bold text-green-400 mb-4">🏆 Resultados Garantidos</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Evite erros críticos que podem prejudicar a saúde das pessoas, gere empatia do cliente 
+                            com o estabelecimento através da organização visual e contribua diretamente para o 
+                            aumento das vendas e lucros da farmácia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-3xl p-8 border border-gold/30">
+                        <h3 class="text-2xl font-bold text-black mb-6">🔬 Fundamentos Científicos</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-red-800 text-xl">🌡️</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Condições Ideais de Armazenamento</h4>
+                                    <p class="text-gray-700 text-sm">Temperatura, umidade e iluminação adequadas para cada tipo de medicamento</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-red-800 text-xl">📊</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Controle de Estoque Avançado</h4>
+                                    <p class="text-gray-700 text-sm">Métodos profissionais de controle, validade e rotatividade</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-red-800 text-xl">🎨</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Exposição Estratégica</h4>
+                                    <p class="text-gray-700 text-sm">Técnicas de visual merchandising farmacêutico para maximizar vendas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="glass-effect rounded-2xl p-6 border border-primary/20">
+                            <div class="text-4xl mb-4">📈</div>
+                            <h4 class="font-bold text-black text-lg mb-2">Impacto Direto nos Resultados</h4>
+                            <p class="text-gray-700 text-sm">
+                                Organização profissional → Confiança do cliente → Aumento de vendas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dispensação Profissional Section -->
+    <section class="py-20 px-4 bg-gray-500">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-accent font-semibold">💊 ROTINA DE EXCELÊNCIA 2</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                    Dispensação Medicamentosa
+                    <span class="text-accent">de Elite</span>
+                </h2>
+                <p class="text-xl text-gray-200 max-w-4xl mx-auto">
+                    Técnicas avançadas para dispensar medicamentos com máxima segurança, 
+                    evitando falhas críticas e garantindo excelência no atendimento
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="glass-effect-gray rounded-3xl p-8 border border-accent/30">
+                        <h3 class="text-2xl font-bold text-white mb-6">⚕️ Competências Desenvolvidas:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Técnicas profissionais de dispensação medicamentosa</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Regras de dispensação de Antibióticos</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Dispensação de Medicamentos Controlados</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Técnicas de atendimento que evitam falhas</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Parceria eficaz com o Farmacêutico</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-200">Garantia de qualidade no serviço</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-effect-gray rounded-3xl p-8 border border-red-500/30 bg-red-500/10">
+                        <h4 class="text-xl font-bold text-red-400 mb-4">⚠️ Evite Erros Críticos</h4>
+                        <p class="text-gray-200 leading-relaxed">
+                            A dispensação incorreta pode ter consequências graves para a saúde do paciente. 
+                            Nosso método garante que você domine todas as técnicas para uma dispensação 
+                            <span class="text-white font-bold">100% segura e profissional</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="glass-effect-gray rounded-3xl p-8 border border-blue-500/30">
+                        <h3 class="text-2xl font-bold text-white mb-6">🎯 Protocolos de Segurança</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-accent text-xl">📋</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Análise de Receituários</h4>
+                                    <p class="text-gray-200 text-sm">Verificação completa de prescrições e identificação de irregularidades</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-accent text-xl">🔒</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Medicamentos Controlados</h4>
+                                    <p class="text-gray-200 text-sm">Protocolos específicos para medicamentos de uso controlado</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-accent text-xl">🤝</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">Trabalho em Equipe</h4>
+                                    <p class="text-gray-200 text-sm">Comunicação eficaz com farmacêutico e outros profissionais</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="glass-effect-gray rounded-2xl p-6 border border-accent/20">
+                            <div class="text-4xl mb-4">🛡️</div>
+                            <h4 class="font-bold text-white text-lg mb-2">Segurança Máxima</h4>
+                            <p class="text-gray-200 text-sm">
+                                Zero falhas na dispensação = Confiança total do cliente
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atendimento de Alto Padrão Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-yellow-600/20 border border-yellow-600/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-yellow-700 font-semibold">🤝 ROTINA DE EXCELÊNCIA 3</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    Atendimento de
+                    <span class="text-yellow-700">Alto Padrão</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                    Método Natural de vendas que conduz atendimentos do início ao fim, 
+                    proporcionando experiências memoráveis e fidelizando clientes
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-3xl p-8 border border-yellow-700/30">
+                        <h3 class="text-2xl font-bold text-black mb-6">🌟 Técnicas de Excelência:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Condução completa do atendimento (início ao fim)</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Método Natural de vendas sem pressão</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Geração de satisfação genuína no cliente</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Marketing pessoal de impacto</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Técnicas de fidelização comprovadas</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-gray-700">Aumento natural do ticket médio</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-effect rounded-3xl p-8 border border-purple-500/30 bg-purple-500/10">
+                        <h4 class="text-xl font-bold text-purple-400 mb-4">💡 Método Diferenciado</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nosso método se baseia na <span class="text-black font-bold">venda natural</span>, 
+                            agregando princípios de qualidade que proporcionam satisfação para todos os lados: 
+                            cliente satisfeito, atendente realizado e farmácia próspera.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-3xl p-8 border border-orange-500/30">
+                        <h3 class="text-2xl font-bold text-black mb-6">📊 Fases do Atendimento</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-yellow-700/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-yellow-700 text-xl">1️⃣</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Primeiro Contato</h4>
+                                    <p class="text-gray-700 text-sm">Recepção calorosa e identificação das necessidades</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-yellow-700/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-yellow-700 text-xl">2️⃣</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Desenvolvimento</h4>
+                                    <p class="text-gray-700 text-sm">Apresentação de soluções e orientação técnica</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-yellow-700/20 rounded-xl flex items-center justify-center">
+                                    <span class="text-yellow-700 text-xl">3️⃣</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black mb-2">Finalização</h4>
+                                    <p class="text-gray-700 text-sm">Fechamento natural e pós-venda de qualidade</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="glass-effect rounded-2xl p-6 border border-yellow-700/20">
+                            <div class="text-4xl mb-4">⭐</div>
+                            <h4 class="font-bold text-black text-lg mb-2">Experiência Memorável</h4>
+                            <p class="text-gray-700 text-sm">
+                                Cliente satisfeito = Cliente fidelizado = Sucesso garantido
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Button -->
+    <div class="text-center py-16 px-4 bg-gray-500">
+        <a href="https://pay.hotmart.com/W97698031D?off=0r4h5xu7&bid=1753776009744" 
+           target="_blank"
+           class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg hover-lift transition-all inline-block animate-pulse">
+            🚀 QUERO TESTAR POR R$ 1,00
+        </a>
+    </div>
+
+    <!-- Metodologia Section -->
+    <section id="metodologia" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-500/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-blue-400 font-semibold">🧠 METODOLOGIA EXCLUSIVA</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    Método Científico de
+                    <span class="text-red-800">Aprendizado Acelerado</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                    Nossa metodologia combina os princípios mais eficazes da ciência da aprendizagem 
+                    para garantir absorção máxima em tempo mínimo
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 mb-16">
+                <!-- Princípio de Pareto -->
+                <div class="glass-effect rounded-3xl p-8 border border-blue-500/30 hover-lift transition-all text-center">
+                    <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="text-4xl">📊</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Princípio de Pareto</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Focamos nos <span class="text-blue-400 font-bold">20% mais importantes</span> 
+                        que geram <span class="text-blue-400 font-bold">80% dos resultados</span>. 
+                        Priorizamos o conhecimento essencial que realmente faz diferença na sua prática diária.
+                    </p>
+                </div>
+
+                <!-- Revisão Espaçada -->
+                <div class="glass-effect rounded-3xl p-8 border border-green-500/30 hover-lift transition-all text-center">
+                    <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="text-4xl">🔄</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Revisão Espaçada</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Sistema baseado na <span class="text-green-400 font-bold">curva do esquecimento</span>. 
+                        O conteúdo é revisitado em intervalos estratégicos para 
+                        <span class="text-green-400 font-bold">fixação permanente</span> na memória de longo prazo.
+                    </p>
+                </div>
+
+                <!-- Sistema de Duas Partes -->
+                <div class="glass-effect rounded-3xl p-8 border border-primary/30 hover-lift transition-all text-center">
+                    <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="text-4xl">📚</div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Sistema de Duas Partes</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <span class="text-red-800 font-bold">Parte 1:</span> Resumo executivo com pontos essenciais.
+                        <br><br>
+                        <span class="text-red-800 font-bold">Parte 2:</span> Aprofundamento técnico completo.
+                        Máxima flexibilidade de aprendizado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fluxo de Aprendizagem -->
+            <div class="glass-effect rounded-3xl p-12 border border-gold/30 bg-gold/5">
+                <h3 class="text-3xl font-bold text-black text-center mb-12">
+                    🎯 Fluxo de Aprendizagem Otimizado
+                </h3>
+                
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl">1️⃣</span>
+                        </div>
+                        <h4 class="font-bold text-black text-lg mb-3">Revisão Espaçada</h4>
+                        <p class="text-gray-700 text-sm">
+                            Sistema automático de revisões para fixação permanente
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vantagens da Metodologia -->
+            <div class="grid md:grid-cols-2 gap-12 mt-16">
+                <div class="glass-effect rounded-3xl p-8 border border-green-500/30">
+                    <h4 class="text-2xl font-bold text-green-400 mb-6">✅ Vantagens Comprovadas</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <span class="text-green-500 text-xl">⚡</span>
+                            <span class="text-gray-700"><span class="text-black font-bold">5x mais rápido</span> que métodos tradicionais</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-green-500 text-xl">🧠</span>
+                            <span class="text-gray-700"><span class="text-black font-bold">85% de retenção</span> em longo prazo</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-green-500 text-xl">🎯</span>
+                            <span class="text-gray-700"><span class="text-black font-bold">Foco no essencial</span> sem perda de tempo</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-green-500 text-xl">🔄</span>
+                            <span class="text-gray-700"><span class="text-black font-bold">Flexibilidade total</span> no ritmo de aprendizado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-8 border border-blue-500/30">
+                    <h4 class="text-2xl font-bold text-blue-400 mb-6">🎓 Resultados Mensuráveis</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                                <span class="text-blue-400 text-xl">⏱️</span>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-black">30 dias</div>
+                                <div class="text-gray-700 text-sm">Tempo médio para domínio completo</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                                <span class="text-blue-400 text-xl">🚀</span>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-black">300%</div>
+                                <div class="text-gray-700 text-sm">Aumento médio na confiança profissional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <div class="glass-effect rounded-3xl p-8 border border-primary/30 bg-primary/5 max-w-3xl mx-auto">
+                    <h4 class="text-2xl font-bold text-black mb-4">
+                        🧬 Metodologia Baseada em Neurociência
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Nosso método não é apenas eficaz, é <span class="text-primary font-bold">cientificamente validado</span>. 
+                        Combinamos os princípios mais avançados da neurociência da aprendizagem com a experiência prática 
+                        de mais de uma década no varejo farmacêutico.
+                    </p>
+                    <a href="#planos" class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg hover-lift transition-all inline-block">
+                        🎯 EXPERIMENTAR METODOLOGIA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 px-4 bg-gray-500">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="relative inline-block mb-10">
+                        <div class="absolute inset-0 bg-primary/30 rounded-full filter blur-3xl scale-110"></div>
+                        <img src="https://rodrigotreinamentos.com.br/wp-content/uploads/2025/07/eu-sorrindo.png" 
+                             alt="Rodrigo Borges - Farmacêutico Especialista" 
+                             class="relative w-72 h-72 rounded-full object-cover border-4 border-primary/50 mx-auto">
+                    </div>
+                    
+                    <div class="glass-effect-gray rounded-3xl p-8 border border-primary/30">
+                        <h4 class="font-bold text-white mb-6 text-xl">Credenciais de Elite</h4>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center gap-4">
+                                <span class="text-green-500 text-xl">✓</span>
+                                <span class="text-gray-200 font-medium">Farmacêutico Graduado pela FAEMA</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-green-500 text-xl">✓</span>
+                                <span class="text-gray-200 font-medium">Registro Profissional CRF-SC</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-green-500 text-xl">✓</span>
+                                <span class="text-gray-200 font-medium">Autor de Artigo Científico Publicado - <a href="https://online.unisc.br/seer/index.php/epidemiologia/article/view/4650/3981" target="_blank" class="text-red-800 hover:text-accent transition-colors underline">veja aqui</a></span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-green-500 text-xl">✓</span>
+                                <span class="text-gray-200 font-medium">Mais de uma Década de Experiência</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h2 class="text-4xl md:text-5xl font-black text-white">
+                            Minha <span class="text-primary">Transformação</span>
+                        </h2>
+                        <p class="text-2xl text-red-800 font-bold">
+                            Rodrigo Borges - De farmacêutico inseguro a especialista reconhecido
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 text-gray-200 leading-relaxed text-lg">
+                        <p>
+                            Quando iniciei minha jornada farmacêutica, enfrentava exatamente os mesmos desafios que você vive hoje. 
+                            Lembro perfeitamente da primeira vez que um cliente me questionou sobre um medicamento... 
+                            <span class="text-white font-bold">Fiquei completamente paralisado!</span>
+                        </p>
+                        
+                        <!-- Grid de Imagens -->
+                        <div class="grid grid-cols-3 gap-4 my-8">
+                            <div class="glass-effect-gray rounded-2xl p-2 border border-primary/20 hover-lift transition-all">
+                                <img src="https://rodrigotreinamentos.com.br/wp-content/uploads/2025/07/2.webp" 
+                                     alt="Experiência farmacêutica" 
+                                     class="w-full h-32 object-cover rounded-xl">
+                            </div>
+                            <div class="glass-effect-gray rounded-2xl p-2 border border-primary/20 hover-lift transition-all">
+                                <img src="https://rodrigotreinamentos.com.br/wp-content/uploads/2025/07/1.webp" 
+                                     alt="Jornada profissional" 
+                                     class="w-full h-32 object-cover rounded-xl">
+                            </div>
+                            <div class="glass-effect-gray rounded-2xl p-2 border border-primary/20 hover-lift transition-all">
+                                <img src="https://rodrigotreinamentos.com.br/wp-content/uploads/2025/07/3.webp" 
+                                     alt="Desenvolvimento farmacêutico" 
+                                     class="w-full h-32 object-cover rounded-xl">
+                            </div>
+                        </div>
+                        <p>
+                            Durante essa década de evolução profissional, experimentei na prática todos os obstáculos que limitam farmacêuticos talentosos. 
+                            Foi através dessa experiência intensiva que desenvolvi um sistema comprovadamente eficaz.
+                        </p>
+                    </div>
+
+                    <div class="glass-effect-gray rounded-3xl p-8 border border-green-500/30 bg-green-500/10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 bg-green-500 rounded-2xl flex items-center justify-center">
+                                <span class="text-2xl">🏆</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-xl">Transformação Comprovada</h4>
+                                <p class="text-green-400 font-medium">+300 profissionais de elite formados</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-200 leading-relaxed">
+                            Hoje, após revolucionar minha própria carreira e capacitar mais de +300 profissionais, 
+                            disponibilizo toda essa expertise através da plataforma CAFARMAFLIX.
+                        </p>
+                    </div>
+
+                    <div class="text-center lg:text-left">
+                        <p class="text-xl font-bold text-red-800 border-l-4 border-red-800 pl-8 italic">
+                            "Se consegui evoluir de um farmacêutico inseguro para referência nacional, 
+                            você também pode alcançar essa transformação!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-green-500/20 border border-green-500/30 rounded-full px-6 py-3 text-sm font-medium mb-6">
+                    <span class="text-green-400 font-semibold">🗣️ TRANSFORMAÇÕES REAIS</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    O que dizem nossos
+                    <span class="text-red-800">Farmacêuticos de Elite</span>
+                </h2>
+                <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+                    Resultados autênticos de profissionais que transformaram suas carreiras
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="glass-effect rounded-3xl p-8 border border-green-500/30 hover-lift transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-green-500/50">
+                            <img src="https://static-media.hotmart.com/mdTmLn4Wdfkp23he8SzMNzYcsPo=/488x598/filters:quality(100)/hotmart/checkout_custom/4e65b59e-fedf-4300-b990-0890824b0eda/9cqua8up.png" 
+                                 alt="Gabriela Lopes" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-lg">Gabriela Lopes</h4>
+                            <p class="text-green-400 font-medium">Farmacêutica Recém-Formada</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic text-lg">
+                        "Depois do CAFARMAFLIX, minha confiança no atendimento aumentou 200%. 
+                        Nunca mais passei situações embaraçosas com clientes!"
+                    </blockquote>
+                    <div class="flex text-gold mt-6 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-8 border border-primary/30 hover-lift transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/50">
+                            <img src="https://static-media.hotmart.com/C_9xs-xV3WC-iz_rpF5Heibp8rg=/569x662/filters:quality(100)/hotmart/checkout_custom/3ec66a09-7cfb-440c-a7fe-b4f68a7b8ddf/4vso42yz9.png" 
+                                 alt="Daniel Silva" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-lg">Daniel Silva</h4>
+                            <p class="text-red-800 font-medium">Auxiliar de Farmácia</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic text-lg">
+                        "Em apenas 30 dias conquistei minha primeira promoção profissional. 
+                        O método funciona extraordinariamente na prática."
+                    </blockquote>
+                    <div class="flex text-gold mt-6 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl p-8 border border-blue-500/30 hover-lift transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-black text-lg">Mariana Santos</h4>
+                            <p class="text-blue-400 font-medium">Farmacêutica Especialista</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 leading-relaxed italic text-lg">
+                        "Me tornei a referência absoluta na farmácia. 
+                        Todos os colegas me procuram para esclarecimentos agora!"
+                    </blockquote>
+                    <div class="flex text-gold mt-6 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-10 mt-20">
+                <div class="text-center">
+                    <div class="text-4xl font-black text-red-800 mb-3">+300</div>
+                    <div class="text-gray-700 font-medium">Profissionais Transformados</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-red-800 mb-3">95%</div>
+                    <div class="text-gray-700 font-medium">Taxa de Sucesso</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-red-800 mb-3">4.9</div>
+                    <div class="text-gray-700 font-medium">Avaliação Média</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-red-800 mb-3">30</div>
+                    <div class="text-gray-700 font-medium">Em média Dias para Resultados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section - Oferta R$ 1,00 -->
+    <section id="planos" class="py-20 px-4 bg-gray-500">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 rounded-full px-6 py-3 text-sm font-medium mb-6 animate-pulse">
+                    <span class="text-red-400 font-semibold">🔥 OFERTA ESPECIAL LIMITADA</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-6">
+                    Experimente por 30 Dias
+                    <br>
+                    <span class="text-gold">Por Apenas R$ 1,00</span>
+                </h2>
+                <p class="text-xl text-gray-200 max-w-4xl mx-auto">
+                    Teste 50% do conteúdo do CAFARMAFLIX sem compromisso por um valor simbólico
+                </p>
+            </div>
+
+            <!-- Plano R$ 1,00 -->
+            <div class="max-w-2xl mx-auto">
+                <div class="glass-effect-gray rounded-3xl p-12 border border-gold/50 bg-gold/10 hover-lift transition-all relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-gold text-black px-8 py-3 rounded-full font-bold text-lg animate-pulse">
+                            🔥 OFERTA LIMITADA
+                        </div>
+                    </div>
+                    
+                    <div class="text-center space-y-8 pt-8">
+                        <div class="space-y-3">
+                            <h3 class="text-3xl font-bold text-white">TESTE PARCIAL - 30 DIAS</h3>
+                            <p class="text-gold font-medium text-lg">50% do conteúdo completo</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="text-7xl font-black text-gold">R$ 1,00</div>
+                            <p class="text-gray-200 font-medium text-xl">De <span class="line-through text-red-400">R$ 34,00</span> por apenas R$ 1,00</p>
+                            <p class="text-gray-300 text-lg">30 dias de acesso</p>
+                        </div>
+                        
+                        <ul class="space-y-6 text-left max-w-lg mx-auto">
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Acesso a 50% das aulas por 30 dias</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Mais de 50 aulas de protocolos farmacêuticos</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Parte das 4 Rotinas de Excelência</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Posologias precisas e contraindicações</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-red-500 text-xl font-bold">❌</span>
+                                <span class="text-lg font-semibold">Sem certificado de conclusão</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Cancele quando quiser - sem compromisso</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-blue-500 text-xl font-bold">ℹ️</span>
+                                <span class="text-lg font-semibold">Após 30 dias: R$ 34,00/mês (pode cancelar quando quiser)</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://pay.hotmart.com/W97698031D?off=0r4h5xu7&bid=1753776009744" 
+                           target="_blank"
+                           class="w-full btn-primary text-white font-bold py-6 px-8 rounded-full inline-block text-center text-2xl animate-pulse">
+                            🚀 QUERO TESTAR POR R$ 1,00
+                        </a>
+                        
+                        <p class="text-sm text-gray-300">
+                            ⚠️ Oferta válida apenas para novos assinantes • Após 30 dias evolui para R$ 34,00/mês • Cancele quando quiser
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano Completo R$ 34,00 -->
+            <div class="max-w-2xl mx-auto mt-16">
+                <div class="glass-effect-gray rounded-3xl p-12 border border-primary/50 bg-primary/10 hover-lift transition-all relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-primary text-white px-8 py-3 rounded-full font-bold text-lg">
+                            🎯 ACESSO COMPLETO
+                        </div>
+                    </div>
+                    
+                    <div class="text-center space-y-8 pt-8">
+                        <div class="space-y-3">
+                            <h3 class="text-3xl font-bold text-white">ACESSO COMPLETO</h3>
+                            <p class="text-red-800 font-medium text-lg">100% do conteúdo + certificado</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="text-7xl font-black text-red-800">R$ 34,00</div>
+                            <p class="text-gray-200 font-medium text-xl">Valor mensal</p>
+                            <p class="text-gray-300 text-lg">Acesso completo imediato</p>
+                        </div>
+                        
+                        <ul class="space-y-6 text-left max-w-lg mx-auto">
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Acesso a 100% das aulas imediatamente</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Mais de 100 aulas de protocolos farmacêuticos</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">4 Rotinas de Excelência completas</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Posologias precisas e contraindicações</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Certificado de conclusão incluído</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Material premium de apoio</span>
+                            </li>
+                            <li class="flex items-center gap-4 text-gray-200">
+                                <span class="text-green-500 text-xl font-bold">✅</span>
+                                <span class="text-lg font-semibold">Cancele quando quiser - sem compromisso</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://pay.hotmart.com/W97698031D?off=led1scln&checkoutMode=10" 
+                           target="_blank"
+                           class="w-full btn-primary text-white font-bold py-6 px-8 rounded-full inline-block text-center text-2xl">
+                            🚀 QUERO ACESSO COMPLETO
+                        </a>
+                        
+                        <p class="text-sm text-gray-300">
+                            💳 Cobrança mensal de R$ 34,00 • Cancele quando quiser
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantia -->
+            <div class="glass-effect-gray rounded-3xl p-8 border border-green-500/30 bg-green-500/5 text-center w-full mt-12">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div class="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center border-2 border-green-500/50">
+                        <div class="text-4xl">🛡️</div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-green-400 mb-4">
+                            TESTE SEM RISCO
+                        </h3>
+                        <p class="text-gray-200 leading-relaxed text-lg">
+                            Acesse por 30 dias completos por apenas R$ 1,00. Se não ficar satisfeito, 
+                            cancele a qualquer momento sem custos adicionais. 
+                            <span class="text-white font-bold">Seu risco é praticamente ZERO!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-black mb-6">
+                    Perguntas sobre a
+                    <span class="text-red-800">Oferta de R$ 1,00</span>
+                </h2>
+                <p class="text-xl text-gray-700">
+                    Esclarecemos as principais dúvidas sobre esta oferta especial de 30 dias
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="glass-effect rounded-3xl border border-gray-300 overflow-hidden">
+                    <div class="px-8 pb-8 hidden" id="answer-1">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Não há truque! Esta é uma oferta promocional para que você conheça a qualidade do CAFARMAFLIX. 
+                            Queremos que você experimente nosso método por um valor simbólico e veja os resultados na prática.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl border border-gray-300 overflow-hidden">
+                    <div class="p-8 cursor-pointer" onclick="toggleFAQ(2)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-black">Posso cancelar a qualquer momento?</h3>
+                            <span class="text-2xl transition-transform" id="icon-2">⬇️</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 hidden" id="answer-2">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Sim! Você pode cancelar a qualquer momento durante os 30 dias sem nenhum custo adicional. 
+                            Não há compromisso ou fidelidade. No dia 31 será cobrado o valor da assinatura, que é 34 reais. Atenção: Cancelamentos posteriores a cobrança da assinatura impedem a próxima cobrança, não sendo possível o estorno, que é permitido dentro do período de garantia de 7 dias. Você tem sete dias inicias para decidir se vai querer continuar na CAFARMAFLIX com direito de reembolso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl border border-gray-300 overflow-hidden">
+                    <div class="p-8 cursor-pointer" onclick="toggleFAQ(3)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-black">Tenho acesso a todo o conteúdo por R$ 1,00?</h3>
+                            <span class="text-2xl transition-transform" id="icon-3">⬇️</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 hidden" id="answer-3">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Por R$ 1,00 você tem acesso a 50% do conteúdo completo, que corresponde a mais de 50 aulas 
+                            com protocolos farmacêuticos por 30 dias completos. Não inclui certificado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl border border-gray-300 overflow-hidden">
+                    <div class="p-8 cursor-pointer" onclick="toggleFAQ(4)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-black">E depois dos 30 dias, o que acontece?</h3>
+                            <span class="text-2xl transition-transform" id="icon-4">⬇️</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 hidden" id="answer-4">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Após os 30 dias de teste, sua assinatura evolui automaticamente para o plano mensal de R$ 34,00 
+                            com acesso completo a 100% do conteúdo e certificado. Você pode cancelar a qualquer momento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-3xl border border-gray-300 overflow-hidden">
+                    <div class="p-8 cursor-pointer" onclick="toggleFAQ(5)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-black">Esta oferta é válida para qualquer pessoa?</h3>
+                            <span class="text-2xl transition-transform" id="icon-5">⬇️</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 hidden" id="answer-5">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Esta oferta é válida apenas para novos assinantes do CAFARMAFLIX. 
+                            Se você já foi assinante anteriormente, esta promoção não se aplica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFAQ(num) {
+            const answer = document.getElementById(`answer-${num}`);
+            const icon = document.getElementById(`icon-${num}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <footer class="bg-gray-800 text-gray-400 text-center py-8 px-4 text-xs">
+        <p>© Rodrigo Treinamentos em Farmácia. Todos os direitos reservados. Este site não faz parte do site do Facebook ou Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca comercial da FACEBOOK, Inc.</p>
+    </footer>
+
+</body>
+</html>

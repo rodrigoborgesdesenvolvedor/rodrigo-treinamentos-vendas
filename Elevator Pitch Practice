@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Elevator Pitch Practice — Rodrigo de Almeida Borges</title>
+<style>
+  :root{
+    --navy:#0a2540;
+    --blue:#2563eb;
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --text:#1a2433;
+    --muted:#6b7785;
+    --accent:#10b981;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    padding:32px 16px;
+  }
+  .wrap{max-width:760px;margin:0 auto;}
+  h1{
+    font-size:1.5rem;
+    color:var(--navy);
+    margin-bottom:4px;
+  }
+  .sub{color:var(--muted);margin-bottom:24px;font-size:0.95rem;}
+
+  .global-controls{
+    background:var(--card);
+    border-radius:12px;
+    padding:18px 20px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom:24px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:14px;
+  }
+  .btn{
+    border:none;
+    border-radius:8px;
+    padding:10px 18px;
+    font-size:0.95rem;
+    cursor:pointer;
+    font-weight:600;
+    transition:background .15s;
+  }
+  .btn-play{background:var(--blue);color:#fff;}
+  .btn-play:hover{background:#1d4ed8;}
+  .btn-pause{background:#e2e8f0;color:var(--text);}
+  .btn-pause:hover{background:#cbd5e1;}
+  .btn-stop{background:#fee2e2;color:#b91c1c;}
+  .btn-stop:hover{background:#fecaca;}
+
+  .speed-group{display:flex;gap:6px;align-items:center;}
+  .speed-group span{font-size:0.85rem;color:var(--muted);margin-right:4px;}
+  .speed-btn{
+    border:1px solid #cbd5e1;
+    background:#fff;
+    border-radius:6px;
+    padding:6px 12px;
+    cursor:pointer;
+    font-size:0.85rem;
+  }
+  .speed-btn.active{
+    background:var(--navy);
+    color:#fff;
+    border-color:var(--navy);
+  }
+  #voiceSelect{
+    max-width:240px;
+  }
+
+  .timer{
+    margin-left:auto;
+    font-size:0.85rem;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .section{
+    background:var(--card);
+    border-radius:12px;
+    padding:20px 22px;
+    margin-bottom:16px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.06);
+    border-left:5px solid var(--blue);
+    cursor:pointer;
+    transition:box-shadow .15s, border-color .15s;
+  }
+  .section:hover{box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+  .section.speaking{
+    border-left-color:var(--accent);
+    background:#f0fdf9;
+  }
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+  }
+  .section-title{
+    font-weight:700;
+    color:var(--navy);
+    font-size:0.95rem;
+  }
+  .section-time{
+    font-size:0.78rem;
+    color:var(--muted);
+    background:#eef2f7;
+    padding:2px 9px;
+    border-radius:20px;
+  }
+  .section-text{
+    font-size:1.05rem;
+    line-height:1.55;
+  }
+  .play-icon{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:0.78rem;
+    color:var(--blue);
+    margin-top:8px;
+  }
+
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:0.8rem;
+    margin-top:28px;
+  }
+
+  @media (max-width:480px){
+    .global-controls{flex-direction:column;align-items:stretch;}
+    .timer{margin-left:0;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>🎤 Elevator Pitch Practice</h1>
+  <p class="sub">Click "Play Full Pitch" to hear the whole script, or click any section below to hear just that part. Use this to train your pronunciation and rhythm before recording.</p>
+
+  <div class="global-controls">
+    <button class="btn btn-play" id="playAllBtn">▶ Play Full Pitch</button>
+    <button class="btn btn-pause" id="pauseBtn">⏸ Pause / Resume</button>
+    <button class="btn btn-stop" id="stopBtn">⏹ Stop</button>
+    <div class="speed-group">
+      <span>Speed:</span>
+      <button class="speed-btn" data-speed="0.5">0.5x</button>
+      <button class="speed-btn active" data-speed="1">1x</button>
+      <button class="speed-btn" data-speed="2">2x</button>
+    </div>
+    <div class="speed-group">
+      <span>Voice:</span>
+      <select id="voiceSelect" class="speed-btn" style="cursor:pointer;"></select>
+    </div>
+    <div class="timer" id="statusText">Ready</div>
+  </div>
+
+  <div class="section" data-text="Hello! My name is Rodrigo de Almeida Borges, and I am currently studying Front-End Systems Development at SENAI Santa Catarina. I hold a background in Pharmacy, and today I am transitioning my career into the technology field.">
+    <div class="section-head">
+      <span class="section-title">00–20s · Introduction</span>
+      <span class="section-time">~20s</span>
+    </div>
+    <div class="section-text">Hello! My name is Rodrigo de Almeida Borges, and I am currently studying Front-End Systems Development at SENAI Santa Catarina. I hold a background in Pharmacy, and today I am transitioning my career into the technology field.</div>
+    <div class="play-icon">▶ Click to listen</div>
+  </div>
+
+  <div class="section" data-text="I have practical experience with HTML5, CSS, and JavaScript, gained through independent projects, including building websites and web automation solutions. I am comfortable working with responsive layouts and I am always learning new tools to improve my development skills.">
+    <div class="section-head">
+      <span class="section-title">20–50s · Skills & Tech Background</span>
+      <span class="section-time">~30s</span>
+    </div>
+    <div class="section-text">I have practical experience with HTML5, CSS, and JavaScript, gained through independent projects, including building websites and web automation solutions. I am comfortable working with responsive layouts and I am always learning new tools to improve my development skills.</div>
+    <div class="play-icon">▶ Click to listen</div>
+  </div>
+
+  <div class="section" data-text="There are many entry-level opportunities in front-end development today, and I am looking for a junior front-end role where I can apply my skills, keep growing as a developer, and contribute to real-world projects.">
+    <div class="section-head">
+      <span class="section-title">50–70s · Professional Goal</span>
+      <span class="section-time">~20s</span>
+    </div>
+    <div class="section-text">There are many entry-level opportunities in front-end development today, and I am looking for a junior front-end role where I can apply my skills, keep growing as a developer, and contribute to real-world projects.</div>
+    <div class="play-icon">▶ Click to listen</div>
+  </div>
+
+  <div class="section" data-text="Thank you for your time and consideration. You can check my full resume and GitHub portfolio attached, and I look forward to the opportunity to contribute to your team.">
+    <div class="section-head">
+      <span class="section-title">70–90s · Closing & Call to Action</span>
+      <span class="section-time">~20s</span>
+    </div>
+    <div class="section-text">Thank you for your time and consideration. You can check my full resume and GitHub portfolio attached, and I look forward to the opportunity to contribute to your team.</div>
+    <div class="play-icon">▶ Click to listen</div>
+  </div>
+
+  <footer>Built for English pronunciation practice — uses your browser's built-in text-to-speech.</footer>
+</div>
+
+<script>
+const synth = window.speechSynthesis;
+let currentRate = 1;
+let voices = [];
+
+const voiceSelect = document.getElementById('voiceSelect');
+let selectedVoiceName = null;
+
+// Common male-sounding voice name patterns across browsers/OS
+const maleHints = ['male','david','mark','daniel','alex','fred','tom','james','guy','ryan','eric','matthew','christopher','george','aaron'];
+const femaleHints = ['female','zira','susan','samantha','victoria','karen','tessa','moira','aria','jenny','emma'];
+
+function guessGender(name){
+  const n = name.toLowerCase();
+  if (maleHints.some(h => n.includes(h))) return 'male';
+  if (femaleHints.some(h => n.includes(h))) return 'female';
+  return 'unknown';
+}
+
+function loadVoices(){
+  voices = synth.getVoices();
+
+  voiceSelect.innerHTML = '';
+  voices.forEach((v) => {
+    const opt = document.createElement('option');
+    opt.value = v.name;
+    opt.textContent = v.name + ' (' + v.lang + ')' + (guessGender(v.name) === 'male' ? ' ♂' : guessGender(v.name) === 'female' ? ' ♀' : '');
+    voiceSelect.appendChild(opt);
+  });
+
+  // Default to first voice that looks male and is English, else any english voice, else first available
+  const englishVoices = voices.filter(v => v.lang && v.lang.startsWith('en'));
+  const defaultMale = englishVoices.find(v => guessGender(v.name) === 'male') || voices.find(v => guessGender(v.name) === 'male');
+  selectedVoiceName = (defaultMale || englishVoices[0] || voices[0] || {}).name || null;
+  if (selectedVoiceName) voiceSelect.value = selectedVoiceName;
+}
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+voiceSelect.addEventListener('change', () => {
+  selectedVoiceName = voiceSelect.value;
+});
+
+function pickEnglishVoice(){
+  return voices.find(v => v.name === selectedVoiceName) ||
+         voices.find(v => v.lang === 'en-US') ||
+         voices.find(v => v.lang && v.lang.startsWith('en')) ||
+         null;
+}
+
+const statusText = document.getElementById('statusText');
+const sections = Array.from(document.querySelectorAll('.section'));
+const speedBtns = document.querySelectorAll('.speed-btn');
+
+speedBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    speedBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentRate = parseFloat(btn.dataset.speed);
+  });
+});
+
+function speakText(text, onEndCallback){
+  synth.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  const v = pickEnglishVoice();
+  if (v) utter.voice = v;
+  utter.lang = 'en-US';
+  utter.rate = currentRate;
+  utter.onend = () => {
+    statusText.textContent = 'Ready';
+    sections.forEach(s => s.classList.remove('speaking'));
+    if (onEndCallback) onEndCallback();
+  };
+  synth.speak(utter);
+}
+
+sections.forEach(sec => {
+  sec.addEventListener('click', () => {
+    sections.forEach(s => s.classList.remove('speaking'));
+    sec.classList.add('speaking');
+    statusText.textContent = 'Speaking section…';
+    speakText(sec.dataset.text);
+  });
+});
+
+document.getElementById('playAllBtn').addEventListener('click', () => {
+  let index = 0;
+  statusText.textContent = 'Speaking full pitch…';
+  function playNext(){
+    if (index >= sections.length){
+      statusText.textContent = 'Ready';
+      sections.forEach(s => s.classList.remove('speaking'));
+      return;
+    }
+    sections.forEach(s => s.classList.remove('speaking'));
+    sections[index].classList.add('speaking');
+    speakText(sections[index].dataset.text, () => {
+      index++;
+      playNext();
+    });
+  }
+  playNext();
+});
+
+document.getElementById('pauseBtn').addEventListener('click', () => {
+  if (synth.speaking && !synth.paused){
+    synth.pause();
+    statusText.textContent = 'Paused';
+  } else if (synth.paused){
+    synth.resume();
+    statusText.textContent = 'Speaking…';
+  }
+});
+
+document.getElementById('stopBtn').addEventListener('click', () => {
+  synth.cancel();
+  sections.forEach(s => s.classList.remove('speaking'));
+  statusText.textContent = 'Stopped';
+});
+</script>
+</body>
+</html>
